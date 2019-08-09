@@ -1,0 +1,24 @@
+{
+  "name": "wallet-genesis",
+  "version": "1.0.0",
+  "description": "Setup byteball from the genesis unit",
+  "main": "start.js",
+  "scripts": {
+    "init": "node init.js",
+    "create_bytes": "node create_bytes.js",
+    "create_blackbytes": "node create_blackbytes.js",
+    "pay_bytes": "node pay_bytes.js",
+    "pay_blackbytes": "node pay_blackbytes.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guantau",
+  "license": "MIT",
+  "browser": {
+    "request": "browser-request",
+    "secp256k1": "secp256k1/js"
+  },
+  "dependencies": {
+    "ocore": "git+https://github.com/byteball/ocore.git",
+    "headless-obyte": "git+https://github.com/byteball/headless-obyte.git"
+  }
+}
